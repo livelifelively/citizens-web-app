@@ -1,7 +1,6 @@
 'use client';
 
 import { createTheme, MantineThemeOverride } from '@mantine/core';
-import { themeToVars } from '@mantine/vanilla-extract';
 
 export const theme: MantineThemeOverride = createTheme({
   /* Put your mantine theme override here */
@@ -36,5 +35,3 @@ export const theme: MantineThemeOverride = createTheme({
   fontFamily:
     'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
 });
-
-export const themeVars = themeToVars(theme);

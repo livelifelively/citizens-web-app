@@ -1,0 +1,10 @@
+.logo {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.logoText {
+  font-family: 'Quicksand';
+  font-weight: 700;
+}

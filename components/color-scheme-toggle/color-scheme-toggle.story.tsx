@@ -1,4 +1,4 @@
-import { ColorSchemeToggle } from './ColorSchemeToggle';
+import { ColorSchemeToggle } from './color-scheme-toggle';
 
 export default {
   title: 'Color Scheme Toggle',

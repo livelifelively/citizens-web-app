@@ -16,7 +16,7 @@
   line-height: 1.1;
   margin: 0;
   padding: 0;
-  /* color: themeVars.colorScheme === 'dark' ? themeVars.colors.white : themeVars.colors.black, */
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 
   @media (max-width: var(mantine-breakpoint-sm)) {
     font-size: rem(42px);
@@ -34,9 +34,9 @@
 }
 
 .controls {
-  margin-top: calc(var(mantine-spacing-xl) * 2);
+  margin-top: calc(var(--mantine-spacing-lg) * 2);
 
-  @media (max-width: var(mantine-breakpoint-sm)) {
+  @media (max-width: var(--mantine-breakpoint-sm)) {
     margin-top: var(--mantine-spacing-xl);
   }
 }
@@ -54,19 +54,17 @@
   }
 }
 
-/* const card = style({
-  // border: `${rem(1)} solid ${
-  //   themeVars.colorScheme === 'dark' ? themeVars.colors.dark[5] : themeVars.colors.gray[1]
-  // }`,
-});
+.card {
+  border: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+}
 
-const cardTitle = style({
-  // '&::after': {
-  //   content: '""',
-  //   display: 'block',
-  //   backgroundColor: themeVars.colors.yellow[8],
-  //   width: rem(45),
-  //   height: rem(2),
-  //   marginTop: themeVars.spacing.sm,
-  // },
-}); */
+.cardTitle {
+  &::after {
+    content: '';
+    display: block;
+    background-color: var(--mantine-color-yellow-8);
+    width: rem(45px);
+    height: rem(2px);
+    margin-top: var(--mantine-spacing-sm);
+  }
+}
